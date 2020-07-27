@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./reset.py; avrdude -c ttl232r -p atmega128rfa1 -e -P usb:A50285BI -v -b 9600
+./reset.py; avrdude -c ttl232r -p atmega128rfa1 -V -U flash:w:test-tama.ino.rf128.hex:i -P usb:A50285BI -v -b 19200

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./reset.py; avrdude -c ttl232r -p atmega128rfa1 -e -P usb:A50285BI -v -b 9600
